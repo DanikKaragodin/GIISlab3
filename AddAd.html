@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='AddAd.css'>
+    <script>
+        function handleFile(input) {
+        const file = input.files[0];
+        var reader = new FileReader();
+        reader.onload = function(e) {
+        document.getElementById('Adimg').setAttribute('src', e.target.result);
+        }
+        reader.readAsDataURL(file);
+    }
+    </script>
+</head>
+<body onload="document.getElementById('RegisterForm').style.display='none'">
+    <header>
+        <div id="HeaderPhoto"></div>
+        <nav>
+            <button  onclick="document.location='home.html'">Автомобили</button>
+            <button><s>Грузовики</s></button>
+            <button><s>Запчасти</s></button>
+            <button onclick="document.location='Reviews.html'" > Отзывы</button>
+            <button><s>Каталог</s></button>
+            <button><s>Шины</s></button>
+            <button class="HighlightedButton currentLocation" onclick="document.location='AddAd.html'">Подать объявление</button>
+            <button class="HighlightedButton" onclick="document.location='Login.html'">Вход</button>
+        </nav>
+    </header>
+    <main>
+        <div id="AdDiv">
+            <div id="AdImgDiv">
+                <img id="Adimg">
+                <input id="AdFile" type="file" style="display: none;" onchange="handleFile(this)" accept="image/png, image/jpeg">
+                <label id="LabelFile" for="AdFile"> Выбрать фото </label>
+            </div>
+
+            <div id="AdDesc">
+
+                <ul id="DescList">
+                    <li>
+                        <p>Название Объявления</p>
+                        <input class="InputForm" id="AdName" type="text">
+                    </li>
+                    <li>
+                        <p>Модель</p>
+                        <input class="InputForm" id="Model" type="text">
+                    </li>
+                    <li>
+                        <p>Цена</p>
+                        <input class="InputForm" id="Price" type="text">
+                    </li>
+                    <li>
+                        <p>Двигатель</p>
+                        <input class="InputForm" id="Engine" type="text">
+                    </li>
+                    <li>
+                        <p>Мощность</p>
+                        <input class="InputForm" id="Power" type="text">
+                    </li>
+                    <li>
+                        <p>Коробка передач</p>
+                        <input class="InputForm" id="Transmission" type="text">
+                    </li>
+                    <li>
+                        <p>Привод</p>
+                        <input class="InputForm" id="Drive" type="text">
+                    </li>
+                    <li>
+                        <p>Тип кузова</p>
+                        <input class="InputForm" id="Body type" type="text">
+                    </li>
+                    <li>
+                        <p>Цвет</p>
+                        <input class="InputForm" id="Color" type="text">
+                    </li>
+                    <li>
+                        <p>Пробег</p>
+                        <input class="InputForm" id="Mileage" type="text">
+                    </li>
+                    <li>
+                        <p>Руль</p>
+                        <input class="InputForm" id="Steering whee" type="text">
+                    </li>
+                    <li>
+                        <p>Поколение</p>
+                        <input class="InputForm" id="Generation" type="text">
+                    </li>
+                    <li>
+                        <p>Комплектация</p>
+                        <input class="InputForm" id="Package contents" type="text">
+                    </li>
+                    <li>
+                        <p>Город</p>
+                        <input class="InputForm" id="City" type="text">
+                    </li>
+                    <li>
+                        <p>Дополнительно:</p>
+                        <input class="InputForm" id="Additionally" type="text">
+                    </li>
+                    <li>
+                        <p>Поколение</p>
+                        <input class="InputForm" id="GenerationCar" type="text">
+                    </li>
+                </ul>
+                <button class="SumbitButton"> Подать объявление </button>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>© 2004–2024 ПучаДром</p>
+    </footer>
+</body>
+</html>

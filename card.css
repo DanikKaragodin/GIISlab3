@@ -1,0 +1,138 @@
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: all ease 0.2s;
+
+}
+body {
+    background-color: #1d1d1d;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    height: 100vh;
+    color:#dad9d9;
+    overflow-x: hidden;
+    
+}
+button{
+    cursor: pointer;
+}
+header #HeaderPhoto{ 
+    max-width: 1200px;
+    height: 65px;
+    background-image: url(Head.png);
+    margin: 0 auto;
+}
+header nav{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+header nav button{
+    padding: 12px 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+.currentLocation{
+    background-color: #282727;
+}
+header nav button:hover{
+    background-color: #c41313;
+}
+header nav .HighlightedButton{
+    background-color: #c41313;
+}
+header nav .HighlightedButton:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c41313;
+}
+#ProductName{
+    padding: 3% 0 3% 20%;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+#ProductInfo{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2.5fr;
+    width: 100vw;
+    padding: 0 5% 1% 0%;
+    justify-items: center;
+    font-size: 1.5vw;
+}
+#ProductPhoto{
+    width: 75%;
+    overflow: hidden;
+}
+#ProductPhoto img{
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+#Price{
+    padding-bottom: 3%;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+#TechDesc{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    line-height: 1.6em;
+    justify-items: center;
+}
+.CategoryTechDesc{
+    white-space: nowrap;
+    color: #888787;
+    justify-self: left;
+}
+#ProductUserDesc{
+    padding-top: 17%;
+}
+#UserContact{
+    margin-top: 4%;
+    width: 100%;
+    height: 2vw;
+    border-radius: 5px;
+    background-color: #fa1a1aee;
+    border: none;
+    font-size: 1.7vw;
+    color:#fffdfd
+}
+#UserContact:hover{
+    background-color:#c31515ee;
+}
+#UserMessage{
+    margin-top: 4%;
+    width: 100%;
+    height: 2vw;
+    border-radius: 5px;
+    background-color: #fa1a1a40;
+    border: none;
+    font-size: 1.7vw;
+    color:#fffdfd
+}
+#UserMessage:hover{
+    background-color:#650b0b40;
+}
+footer{
+    background-color: #131313;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+}

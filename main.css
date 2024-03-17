@@ -1,0 +1,219 @@
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: all ease 0.2s;
+
+}
+body {
+    background-color: #1d1d1d;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'article'
+    'main'
+    'footer';
+    height: 100vh;
+    color:#dad9d9
+}
+button{
+    cursor: pointer;
+}
+header #HeaderPhoto{ 
+    max-width: 1200px;
+    height: 65px;
+    background-image: url(Head.png);
+    margin: 0 auto;
+}
+header nav{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+header nav button{
+    padding: 12px 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+.currentLocation{
+    background-color: #282727;
+}
+header nav button:hover{
+    background-color: #c41313;
+}
+header nav .HighlightedButton{
+    background-color: #c41313;
+}
+header nav .HighlightedButton:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c41313;
+
+}
+article#Stick{
+    height: 320px;
+    margin-bottom: 20px;
+}
+article#Stick > div > p {
+    padding: 13px;
+    text-align: center;
+    font-weight: 700;
+    font: 2em Constantia;
+    color:#f11b1b
+}
+article#Stick hr{
+    width: 90%;
+    margin: 0px auto 20px auto;
+    border-color: #da1616;
+}
+#Stick #StickCards{
+    display: flex;
+    justify-content: space-around;
+}
+#Stick #StickCards .StickCard{
+    height: 240px;
+    width: 260px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    background-color:#181818;
+    border-bottom:3px solid #252525;
+    border-radius: 10px;
+}
+#Stick #StickCards .StickCard:hover{
+    background-color: #c41313;
+    cursor: pointer;
+}
+#Stick #StickCards .StickCard .StickCardImg{
+    overflow: hidden;
+    text-align: center;
+    padding: 3px;
+    
+}
+#Stick #StickCards .StickCard .StickCardImg img{
+    border-radius: 10px;
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+}
+.StickCardName{font: 1em Constantia;padding-left: 10px;}
+.StickCardPrice{font: 1em Constantia;padding-left: 10px;}
+.StickCardPlace{color:#7a7a7a;font: 1em Constantia;padding-left: 10px;}
+main{
+    background-color: #282727;
+    padding-top: 15px;
+}
+#ProductsInfo{
+    height: 50px;
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#ProductsInfo button{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0 40px;
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 0px;
+    border-bottom: 3px solid #1d1d1d;
+    color:#898989;
+}
+#ProductsInfo button:hover{
+    color:#fff;
+    border-bottom: 3px solid #da1616;
+}
+#ProductsInfo .CountActive{
+    color:#fff;
+    border-bottom: 3px solid #da1616;
+}
+#ProductsInfo .CountActive:hover{
+    color:#898989;
+}
+#ProductsInfo #TypeOfSort{
+text-align: center;
+appearance: none;
+border: solid 1px;
+padding: 0 1em;
+background-color: #282727;
+border-radius: 10px;
+cursor: pointer;
+}
+select::-ms-expand {
+    display: none;}
+#ProductsInfo #TypeOfSort:hover{
+    border-color: #da1616;
+}
+#ProductsInfo #TypeOfSort:focus{
+    outline: none!important;
+}
+#CardList{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 20px 0 20px 5%;
+}
+.Card{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr;
+    min-width: 500px;
+    max-width: 800px;
+    height:200px; 
+    margin: 20px;
+    padding: 10px;
+    background-color: #434242 ;
+    border-radius: 10px;
+    border-bottom: 3px solid #393939;
+}
+.Card:hover{
+    background-color: #252525 ;
+    cursor: pointer;
+}
+.CardPhoto{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.CardPhoto img{
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.CardName{
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.CardModel{
+    color: #878585;
+    padding-bottom: 5px;
+}
+.CardTechDesc{
+    font-size: 1.2em;
+}
+.CardPrice p {
+    font-size: 2em;
+    text-align: right;
+    padding-right: 15px;
+    font-style: italic;
+}
+footer{
+    background-color: #131313;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+}

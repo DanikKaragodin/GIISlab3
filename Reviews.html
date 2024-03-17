@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reviews.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <div id="HeaderPhoto"></div>
+        <nav>
+            <button  onclick="document.location='home.html'">Автомобили</button>
+            <button><s>Грузовики</s></button>
+            <button><s>Запчасти</s></button>
+            <button onclick="document.location='Reviews.html'" class="currentLocation"> Отзывы</button>
+            <button><s>Каталог</s></button>
+            <button><s>Шины</s></button>
+            <button class="HighlightedButton" onclick="document.location='AddAd.html'">Подать объявление</button>
+            <button class="HighlightedButton" onclick="document.location='Login.html'">Вход</button>
+        </nav>
+    </header>
+    <main>
+        <h1 id="Heading"> Отзывы клиентов: </h1>
+        <hr id="HeadingHr">
+        <ul id="ReviewsList">
+            <li>
+                <div class="ReviewPhoto"><img src="ReviewsPhotos/suhachMen.png"></div>
+                <div class="UserInfo">
+                    <p class="UserName"> Игнат Самурайко </p>
+                    <p class="UserReview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque exercitationem ipsam eveniet, deserunt qui, temporibus dolor quod sit pariatur ipsum libero quam ut ad quisquam quidem illum nemo! Obcaecati!</p>
+                </div>
+            </li>
+            <li>
+                <div class="ReviewPhoto"><img src="ReviewsPhotos/Без имени-1.png"></div>
+                <div class="UserInfo">
+                    <p class="UserName"> Йохотако Вопудахо </p>
+                    <p class="UserReview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque exercitationem ipsam eveniet, deserunt qui, temporibus dolor quod sit pariatur ipsum libero quam ut ad quisquam quidem illum nemo! Obcaecati!</p>
+                </div>
+            </li>
+            <li>
+                <div class="ReviewPhoto"><img src="ReviewsPhotos/чупакабра.png"></div>
+                <div class="UserInfo">
+                    <p class="UserName"> Светлана Николаевна</p>
+                    <p class="UserReview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque exercitationem ipsam eveniet, deserunt qui, temporibus dolor quod sit pariatur ipsum libero quam ut ad quisquam quidem illum nemo! Obcaecati!</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>© 2004–2024 ПучаДром</p>
+    </footer>
+</body>
+</html>

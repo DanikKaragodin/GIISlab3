@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <div id="HeaderPhoto"></div>
+        <nav>
+            <button class="currentLocation" onclick="document.location='home.html'">Автомобили</button>
+            <button><s>Грузовики</s></button>
+            <button><s>Запчасти</s></button>
+            <button onclick="document.location='Reviews.html'">Отзывы</button>
+            <button><s>Каталог</s></button>
+            <button><s>Шины</s></button>
+            <button class="HighlightedButton" onclick="document.location='AddAd.html'">Подать объявление</button>
+            <button class="HighlightedButton" onclick="document.location='Login.html'">Вход</button>
+        </nav>
+    </header>
+    <article id="Stick">
+        <div>
+        <p>Прилеплено:</p>
+        <hr />
+        </div>
+        <div id="StickCards">
+        <section class="StickCard" onclick="document.location='CardAudi.html'">
+            <div class="StickCardImg">
+            <img src="Auto/ford.webp">
+            </div>
+            <div>
+            <p class="StickCardName"> Audi Q7 </p>
+            <p class="StickCardPrice"> $12000</p>
+            <p class="StickCardPlace"> Москва</p>
+            </div>
+        </section>
+        <section class="StickCard" onclick="document.location='CardToyota.html'">
+            <div class="StickCardImg">
+            <img src="Auto/toyota.webp">
+            </div>
+            <div>
+            <p class="StickCardName"> Toyota Land Cruiser </p>
+            <p class="StickCardPrice"> $9000 </p>
+            <p class="StickCardPlace"> Минск </p>
+            </div>
+        </section>
+        <section class="StickCard" onclick="document.location='CardRangeRover.html'">
+            <div class="StickCardImg">
+            <img src="Auto/rangerover.webp">
+            </div>
+            <div>
+            <p class="StickCardName"> Range Rover Sport </p>
+            <p class="StickCardPrice"> $23000 </p>
+            <p class="StickCardPlace"> Брест </p>
+            </div>
+        </section>
+        </div>
+    </article>
+    <main>
+        <div id="ProductsInfo">
+            <button id="CountProducts" class="CountActive">3 Объявления </button>
+            <button id="CountModels">0 Моделей</button>
+            <select name="TypeOfSort" id="TypeOfSort">
+                <option value="New">Новые объявления</option>
+                <option value="Old">Старые объявления</option>
+                <option value="Cheap">По возрастанию цены</option>
+                <option value="Expensive">По убыванию цены</option>
+            </select>
+        </div>
+        <div id="CardList">
+            <section class="Card" onclick="document.location='CardAudi.html'">
+                <div class="CardPhoto">
+                    <img src="Auto/ford.webp"> 
+                </div>
+                <div class="CardDesc">
+                    <p class="CardName">Audi Q7</p>
+                    <p class="CardModel">3.4 AT Luxury 7S</p>
+                    <p class="CardTechDesc">3.4 л (415 л.с.), бензин, АКПП, 4WD</p>
+                </div>
+                <div class="CardPrice">
+                    <p>$12000</p>
+                </div>
+            </section>
+            <section class="Card" onclick="document.location='CardToyota.html'">
+                <div class="CardPhoto">
+                    <img src="Auto/toyota.webp"> 
+                </div>
+                <div class="CardDesc">
+                    <p class="CardName">Toyota Land Cruiser</p>
+                    <p class="CardModel">3.4 AT Luxury 7S</p>
+                    <p class="CardTechDesc">3.4 л (415 л.с.), бензин, АКПП, 4WD</p>
+                </div>
+                <div class="CardPrice">
+                    <p>$9000</p>
+                </div>
+            </section>
+            <section class="Card" onclick="document.location='CardRangeRover.html'">
+                <div class="CardPhoto">
+                    <img src="Auto/rangerover.webp"> 
+                </div>
+                <div class="CardDesc">
+                    <p class="CardName">Range Rover Sport </p>
+                    <p class="CardModel">3.4 AT Luxury 7S</p>
+                    <p class="CardTechDesc">3.4 л (415 л.с.), бензин, АКПП, 4WD</p>
+                </div>
+                <div class="CardPrice">
+                    <p>$23000</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© 2004–2024 ПучаДром</p>
+    </footer>
+</body>
+</html>

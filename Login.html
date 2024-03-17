@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+    <script>
+        function ChangeForm(Form){
+            if(Form==='Login'){
+                document.getElementById('LoginForm').style.display='flex';
+                document.getElementById('LoginButton').classList.add('ChosenLRButton');
+                document.getElementById('RegisterForm').style.display='none';
+                document.getElementById('RegButton').classList.remove('ChosenLRButton');
+            }
+            else if(Form === 'Registration'){
+                document.getElementById('LoginForm').style.display='none';
+                document.getElementById('LoginButton').classList.remove('ChosenLRButton');
+                document.getElementById('RegisterForm').style.display='flex';
+                document.getElementById('RegButton').classList.add('ChosenLRButton');
+            }
+        }
+    </script>
+</head>
+<body onload="document.getElementById('RegisterForm').style.display='none'">
+    <header>
+        <div id="HeaderPhoto"></div>
+        <nav>
+            <button  onclick="document.location='home.html'">Автомобили</button>
+            <button><s>Грузовики</s></button>
+            <button><s>Запчасти</s></button>
+            <button onclick="document.location='Reviews.html'" > Отзывы</button>
+            <button><s>Каталог</s></button>
+            <button><s>Шины</s></button>
+            <button class="HighlightedButton" onclick="document.location='AddAd.html'">Подать объявление</button>
+            <button class="HighlightedButton currentLocation" onclick="document.location='Login.html'">Вход</button>
+        </nav>
+    </header>
+    <main>
+        <div id="LoginDiv">
+            <div id="ButtonsLoginReg">
+                <button id="LoginButton" onclick="ChangeForm('Login')" class="LoginReg ChosenLRButton" > Вход по логину </button>
+                <button id="RegButton"  onclick="ChangeForm('Registration')" class="LoginReg"> Регистрация </button>
+            </div>
+            <div id="MainForm">
+                <div class="LRForm" id="LoginForm">
+                    <p class="LoginName"> Вход по логину\Телефону: </p>
+                    <input class="InputForm" type="text" id="Login">
+                    <p id="PasswordName">Пароль: </p>
+                    <input class="InputForm" type="password" id="Password">
+                    <button class="SumbitButton"> Войти </button>
+                </div>
+                <div class="LRForm"  id="RegisterForm" style="display: none;">
+                    <p class="LoginName"> Телефон: </p>
+                    <input class="InputForm" type="number" id="Telephone">
+                    <button class="SumbitButton"> <i class="fa fa-commenting"></i> Отправить СМС </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2004–2024 ПучаДром</p>
+    </footer>
+</body>
+</html>

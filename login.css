@@ -1,0 +1,135 @@
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: all ease 0.2s;
+
+}
+body {
+    background-color: #1d1d1d;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    height: 100vh;
+    color:#dad9d9;
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+}
+header #HeaderPhoto{ 
+    max-width: 1200px;
+    height: 65px;
+    background-image: url(Head.png);
+    margin: 0 auto;
+}
+header nav{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+header nav button{
+    padding: 12px 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+.currentLocation{
+    background-color: #282727!important;
+}
+header nav button:hover{
+    background-color: #c41313;
+}
+header nav .HighlightedButton{
+    background-color: #c41313;
+}
+header nav .HighlightedButton:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c41313;
+
+}
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#LoginDiv{
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: #252525;
+    box-shadow: rgba(189, 189, 211, 0.2) 0px 7px 29px 0px;
+}
+#ButtonsLoginReg{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+#MainForm{height: 300px;
+}
+.LRForm{
+    padding: 0 10%;
+    margin-top: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.LoginReg{
+    width: 40%;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #c41313e0;
+    border: 1px solid #c41313;
+    border-radius: 10px;
+}
+
+.LoginReg:hover{
+    background-color: #282727;
+}
+.ChosenLRButton{
+    background-color: #282727;
+}
+.InputForm{
+    background: transparent;
+    border: 2px solid  #c41313;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(189, 189, 211, 0.2) 0px 2px 22px 0px;
+    font-size: 1.2em;
+}
+.LoginName{
+    font-size: 1.3em;
+}
+#PasswordName{
+    font-size: 1.3em;
+}
+.SumbitButton{
+    height: 40px;
+    background-color: #c41313;
+    border: 1px solid #c41313;
+    border-radius: 15px;
+    font-size: 1.4em;
+    color:#FFFFFF;
+}
+.SumbitButton:hover{
+    background-color: transparent;
+}
+footer{
+    background-color: #131313;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+}

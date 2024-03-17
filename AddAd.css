@@ -1,0 +1,442 @@
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: all ease 0.2s;
+
+}
+body {
+    background-color: #1d1d1d;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    height: 100vh;
+    color:#dad9d9;
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+}
+header #HeaderPhoto{ 
+    max-width: 1200px;
+    height: 65px;
+    background-image: url(Head.png);
+    margin: 0 auto;
+}
+header nav{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+header nav button{
+    padding: 12px 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+.currentLocation{
+    background-color: #282727!important;
+}
+header nav button:hover{
+    background-color: #c41313;
+}
+header nav .HighlightedButton{
+    background-color: #c41313;
+}
+header nav .HighlightedButton:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c41313;
+
+}
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#AdDiv{
+
+    width: 90vw;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #252525;
+    box-shadow: rgba(189, 189, 211, 0.2) 0px 7px 29px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#Adimg{
+    width: 100%;
+    object-fit: cover;
+}
+#AdImgDiv{
+    position: relative;
+    min-width: 200px;
+}
+#AdDesc{
+    
+}
+#LabelFile{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    border: 3px solid #c41313;
+    border-radius: 10px;
+    padding: 3%;
+    text-align: center;
+    min-width: 200px;
+}
+#LabelFile:hover{
+    background-color: #c41313;
+    cursor: pointer;
+}
+.InputForm{
+    background: transparent;
+    border: 2px solid  #c41313;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(189, 189, 211, 0.2) 0px 2px 22px 0px;
+    font-size: 1.2em;
+}
+#DescList{
+    padding-left: 3%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+}
+#DescList li{ margin: 1% 10px;}
+#DescList li p{
+    font-size: 1.2em;
+}
+.SumbitButton{
+    margin: 30px auto 0 auto;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #c41313;
+    border: 1px solid #c41313;
+    border-radius: 10px;
+    font-size: 1.4em;
+    color:#FFFFFF;
+    width: 95%;
+    * {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: all ease 0.2s;
+
+}
+body {
+    background-color: #1d1d1d;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    height: 100vh;
+    color:#dad9d9;
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+}
+header #HeaderPhoto{ 
+    max-width: 1200px;
+    height: 65px;
+    background-image: url(Head.png);
+    margin: 0 auto;
+}
+header nav{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+header nav button{
+    padding: 12px 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+.currentLocation{
+    background-color: #282727!important;
+}
+header nav button:hover{
+    background-color: #c41313;
+}
+header nav .HighlightedButton{
+    background-color: #c41313;
+}
+header nav .HighlightedButton:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c41313;
+
+}
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#AdDiv{
+
+    width: 90vw;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #252525;
+    box-shadow: rgba(189, 189, 211, 0.2) 0px 7px 29px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#Adimg{
+    width: 100%;
+    object-fit: cover;
+}
+#AdImgDiv{
+    position: relative;
+    min-width: 200px;
+}
+#AdDesc{
+    
+}
+#LabelFile{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    border: 3px solid #c41313;
+    border-radius: 10px;
+    padding: 3%;
+    text-align: center;
+    min-width: 200px;
+}
+#LabelFile:hover{
+    background-color: #c41313;
+    cursor: pointer;
+}
+.InputForm{
+    background: transparent;
+    border: 2px solid  #c41313;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(189, 189, 211, 0.2) 0px 2px 22px 0px;
+    font-size: 1.2em;
+}
+#DescList{
+    padding-left: 3%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+}
+#DescList li{ margin: 1% 10px;}
+#DescList li p{
+    font-size: 1.2em;
+}
+.SumbitButton{
+    margin: 30px auto 0 auto;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #c41313;
+    border: 1px solid #c41313;
+    border-radius: 10px;
+    font-size: 1.4em;
+    color:#FFFFFF;
+    width: 95%;
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: all ease 0.2s;
+
+}
+body {
+    background-color: #1d1d1d;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    height: 100vh;
+    color:#dad9d9;
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+}
+header #HeaderPhoto{ 
+    max-width: 1200px;
+    height: 65px;
+    background-image: url(Head.png);
+    margin: 0 auto;
+}
+header nav{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+header nav button{
+    padding: 12px 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+.currentLocation{
+    background-color: #282727!important;
+}
+header nav button:hover{
+    background-color: #c41313;
+}
+header nav .HighlightedButton{
+    background-color: #c41313;
+}
+header nav .HighlightedButton:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c41313;
+
+}
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+#AdDiv{
+
+    width: 90vw;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #252525;
+    box-shadow: rgba(189, 189, 211, 0.2) 0px 7px 29px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#Adimg{
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+#AdImgDiv{
+    position: relative;
+    min-width: 200px;
+}
+#AdDesc{
+    
+}
+#LabelFile{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    border: 3px solid #c41313;
+    border-radius: 10px;
+    padding: 3%;
+    text-align: center;
+    min-width: 200px;
+}
+#LabelFile:hover{
+    background-color: #c41313;
+    cursor: pointer;
+}
+.InputForm{
+    background: transparent;
+    border: 2px solid  #c41313;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(189, 189, 211, 0.2) 0px 2px 22px 0px;
+    font-size: 1.2em;
+}
+#DescList{
+    padding-left: 3%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+}
+#DescList li{ margin: 1% 10px;}
+#DescList li p{
+    font-size: 1.2em;
+}
+.SumbitButton{
+    margin: 30px auto 0 auto;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #c41313;
+    border: 1px solid #c41313;
+    border-radius: 10px;
+    font-size: 1.4em;
+    color:#FFFFFF;
+    width: 95%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.SumbitButton:hover{
+    background-color: transparent;
+}
+footer{
+    background-color: #131313;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+}
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.SumbitButton:hover{
+    background-color: transparent;
+}
+footer{
+    background-color: #131313;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+}
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.SumbitButton:hover{
+    background-color: transparent;
+}
+footer{
+    background-color: #131313;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+}

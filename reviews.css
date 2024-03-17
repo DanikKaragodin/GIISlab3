@@ -1,0 +1,132 @@
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: all ease 0.2s;
+
+}
+body {
+    background-color: #1d1d1d;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    height: 100vh;
+    color:#dad9d9;
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+}
+header #HeaderPhoto{ 
+    max-width: 1200px;
+    height: 65px;
+    background-image: url(Head.png);
+    margin: 0 auto;
+}
+header nav{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+header nav button{
+    padding: 12px 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    
+}
+.currentLocation{
+    background-color: #282727;
+}
+header nav button:hover{
+    background-color: #c41313;
+}
+header nav .HighlightedButton{
+    background-color: #c41313;
+}
+header nav .HighlightedButton:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c41313;
+
+}
+#Heading{
+    padding: 13px;
+    text-align: center;
+    font-weight: 700;
+    font: 2em Constantia;
+    color:#f11b1b
+}
+#HeadingHr{
+    width: 90%;
+    margin: 0px auto 20px auto;
+    border-color: #da1616;
+}
+#ReviewsList{
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 3%;
+}
+#ReviewsList li{
+    
+    height: 200px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    background-color: #c4131351;
+    border-radius: 10px;
+    max-width: 1000px;
+    padding-left: 1%;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+.ReviewPhoto{
+    width: auto;
+    overflow: hidden;
+}
+.ReviewPhoto img{
+    width: auto;
+    height: 95%;
+    object-fit: contain;
+    border-radius: 20%;
+    border: 3px solid rgba(149, 16, 16, 0.277);
+    box-shadow: 0px 2px rgba(151, 79, 79, 0.237);
+
+}
+.UserInfo{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    overflow: hidden;
+    color:rgb(250, 233, 215)
+}
+.UserName{
+    font-size: 2.3em;
+    text-align: center;
+    font-weight: 700;
+}
+.UserReview{
+    font-size: 1.3em;
+    text-align: justify;
+    padding: 0 5%;
+    overflow-y: auto;
+    font-weight: 300;
+}
+footer{
+    background-color: #131313;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+}
