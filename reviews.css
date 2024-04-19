@@ -92,7 +92,7 @@ header nav .HighlightedButton:hover{
     margin-bottom: 3%;
 }
 .ReviewPhoto{
-    width: auto;
+    width: 100%;
     overflow: hidden;
 }
 .ReviewPhoto img{

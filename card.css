@@ -89,6 +89,12 @@ header nav .HighlightedButton:hover{
     font-weight: 700;
     font-family: "Raleway", sans-serif;
 }
+#favor{
+    color:#dad9d9;
+}
+#favor:hover{
+    color: #c41313;
+}
 #TechDesc{
     display: grid;
     grid-template-columns: 1.5fr 2fr;

@@ -10,9 +10,33 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='card.css'>
-    <script src='main.js'></script>
+    <script>
+        var isfavor=false;
+         function CheckFavor(){
+            let toyota = JSON.parse(localStorage.getItem("Audi")) || [];
+            if (toyota == "1") {
+                document.getElementById('favor').classList.remove('fa-star-o');
+                document.getElementById('favor').classList.add('fa-star');
+                isfavor=true;
+            }
+        }
+        function ChangeFavor(){
+           if (isfavor){
+            document.getElementById('favor').classList.remove('fa-star');
+            document.getElementById('favor').classList.add('fa-star-o');
+            isfavor = !isfavor;
+            localStorage.setItem("Audi",JSON.stringify("0"));
+           }
+           else{
+            document.getElementById('favor').classList.remove('fa-star-o');
+            document.getElementById('favor').classList.add('fa-star');
+            localStorage.setItem("Audi",JSON.stringify("1"));
+            isfavor = !isfavor;
+           }
+        }
+    </script>
 </head>
-<body>
+<body onload="CheckFavor()">
     <header>
         <div id="HeaderPhoto"></div>
         <nav>
@@ -23,6 +47,7 @@
             <button><s>Каталог</s></button>
             <button><s>Шины</s></button>
             <button class="HighlightedButton" onclick="document.location='AddAd.html'">Подать объявление</button>
+            <button class="HighlightedButton" onclick="document.location='favorite.html'">Избранное</button>
             <button class="HighlightedButton" onclick="document.location='Login.html'">Вход</button>
         </nav>
     </header>
@@ -33,7 +58,7 @@
                 <img src="Auto/ford.webp">
             </div>
             <div id="ProductTechDesc">
-                <p id="Price">20000$</p>
+                <p id="Price">20000$  <i id="favor" onclick="ChangeFavor()" class="fa fa-star-o"></i> </p>
                 <div id="TechDesc">
                     <p class="CategoryTechDesc"> Двигатель </p>
                     <p class="DescCategory"> бензин, 1.4 л</p>

@@ -17,10 +17,12 @@ body {
     'main'
     'footer';
     height: 100vh;
-    color:#dad9d9
+    color:#dad9d9;
+    overflow-x: hidden;
 }
 button{
     cursor: pointer;
+
 }
 header #HeaderPhoto{ 
     max-width: 1200px;
